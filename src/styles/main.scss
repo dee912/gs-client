@@ -1,0 +1,152 @@
+* {
+  text-decoration: none;
+  user-select: none;
+}
+
+.logo, .nav {
+  text-align: center;
+  background-color: #000000;
+  color: #FACE7F;
+  margin: 0;
+  h1 {
+    margin-top: 10px
+  }
+}
+
+.nav {
+  a {
+    color: #ffffff;
+  }
+  .dropdown-item {
+    color: black;
+  }
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  .card {
+    img {
+      height: 20em;
+      object-fit: cover;
+    }
+    width: 30rem;
+    margin: 10px;
+  }
+  .card-title, .list-group-item {
+    color: black;
+  }
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  .form-group {
+    margin: 0 5px;
+    max-width: 100px;
+  }
+}
+
+.show-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  .shoe-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .colour, .price {
+    p {
+      font-size: 15px;
+    }
+    a {
+      color: #8d8d8d;
+    }
+  }
+  .shoe-details {
+    display: flex;
+    flex-direction: row;
+    img {
+      max-height: 20em;
+      margin: 20px;
+    }
+  }
+  .extra-images {
+    display: flex;
+    flex-direction: column;
+    img {
+      max-width: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.096);
+      margin: 5px;
+    }
+  }
+  .stock {
+    width: inherit;
+    margin: 20px;
+  }
+  .rec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    h5 {
+      color: black;
+    }
+  }
+  .cardScroll {
+    width: 18rem;
+  }
+  .shoeImage {
+    max-height: 10em;
+  }
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    img {
+      max-height: 10em;
+      margin: 20px;
+    }
+  }
+  button {
+    width: 100px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .contact-us {
+    width: 300px;
+  }
+  .faq {
+    width: 500px;
+  }
+}
+
+@media (max-width: 616px) {
+  .nav, .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .index {
+    .card {
+      max-width: 20rem;
+      img {
+        max-height: 20rem;
+      }
+    }
+  }
+}
