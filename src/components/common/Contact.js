@@ -12,9 +12,9 @@ export default function Contact() {
             <label htmlFor="exampleFormControlSelect1">Reason</label>
             <select className="form-control" id="exampleFormControlSelect1">
               <option>--</option>
-              <option>Return issues</option>
-              <option>Delivery issues</option>
-              <option>Product issue</option>
+              <option>Return query</option>
+              <option>Delivery query</option>
+              <option>Product query</option>
               <option>General query</option>
               <option>Other</option>
             </select>
@@ -24,7 +24,11 @@ export default function Contact() {
             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </form>
+        <button type="button" className="submit btn btn-outline-dark">Submit</button>
+        <p>Emails will be replied to within a XXhrs, Mon - Sat.</p>
+        <p>Phone: 0XXX XXX XXX, Mon - Fri 9am - 5pm.</p>
       </div>
+      
       <div className="faq">
         <h1>FAQ&apos;s</h1>
         <div className="accordion" id="accordionExample">
@@ -36,7 +40,6 @@ export default function Contact() {
                 </button>
               </h2>
             </div>
-
             <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div className="card-body">
                 All shipping infromation can be found <a href="#">here</a>.
@@ -68,6 +71,20 @@ export default function Contact() {
             <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
               <div className="card-body">
                 Our size information/ conversions can be found <a href="#">here</a>. All sizes displayed are UK sizes.
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-header" id="headingFour">
+              <h2 className="mb-0">
+                <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Loyalty points
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div className="card-body">
+                Get 50 for £5.00 voucher, each £1 spend is 1 point gained!
               </div>
             </div>
           </div>
