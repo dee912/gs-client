@@ -12,10 +12,13 @@ import ShoeShow from './components/shoe/ShoeShow'
 
 function App() {
   return (
+    // keeps your UI in sync with the URL.
     <BrowserRouter>
       <h1 className="logo">Golden Shoe</h1>
       <Nav />
+      {/* Renders the first child <Route> or <Redirect> that matches the location. */}
       <Switch>
+        {/* Its most basic responsibility is to render some UI when its path matches the current URL. */}
         <Route exact path="/" component={Home}/>
         <Route path="/shoes/:shoeId" component={ShoeShow}/>
         <Route path="/shoes" component={ShoeIndex}/>

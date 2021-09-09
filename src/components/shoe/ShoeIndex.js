@@ -4,7 +4,8 @@ import { getAllShoes } from '../../lib/api'
 import ShoeCard from './ShoeCard'
 
 export default function ShoeIndex() {
-
+  // Declare a new state variable, which we'll call "shoe"
+  // useState is a Hook that lets you add React state to function components.
   const [shoes, setShoes] = useState(null)
 
   useEffect(() => {

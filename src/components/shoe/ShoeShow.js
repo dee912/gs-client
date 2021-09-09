@@ -7,6 +7,7 @@ export default function ShoeShow() {
 
   const [shoe, setShoe] = useState(null)
   const [shoes, setShoes] = useState(null)
+  // useParams returns an object of key/value pairs of URL parameters.
   const { shoeId } = useParams()
 
   useEffect(() => {

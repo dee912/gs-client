@@ -25,7 +25,7 @@ export default function Account() {
             <h3>Total points: 100</h3>
             <p>get to 50 for a £5.00 voucher</p>
           </div>
-          <h3>Available vouchers: £5.00</h3>
+          <h3>Available vouchers: £10.00</h3>
         </div>
         <h3>Previous orders</h3>
         <div className="bottom">
